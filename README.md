@@ -1,2 +1,2 @@
-# SIte-pet-shop
+# Site-pet-shop
  Primeiro site de vendas
