@@ -4,13 +4,12 @@
   --verde-limon: #C1FF72;
   --Title-text: #3E393A;
 }
-body { background-color: azure;
+
+body { 
+  background-color: azure;
   font-size: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
 }
+
 header {
   background: var(--laranja);
   border: 0.01rem solid;
@@ -20,31 +19,29 @@ header {
   height: 80px;
   position: sticky;
   top: 0;
-  z-index: 4;
+  z-index: 2;
   padding: 12px;
   display: flex;
-  
-  justify-content: space-between; /* Adicionado para alinhar os elementos à esquerda e à direita */
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav ul {
-  margin:0;
-  width: fit-content;
+header nav ul {
+  margin: 0;
   display: flex;
-  align-items: center; /* Ajustado para centralizar verticalmente a ul */
+  align-items: center;
   gap: 1rem;
-  padding: 0 2rem;
+  padding: 0 1rem;
   color: var(--Title-text);
-  justify-content: flex-end; /* Ajustado para alinhar a ul à direita */
+  justify-content: flex-end;
 }
 
-nav li { font-family: Arial, Helvetica, sans-serif;
+header nav li {
   min-height: fit-content;
   height: fit-content;
   padding: 0.05rem;
   font-size: none;
   list-style: none;
-  align-items: center; /* Ajustado para centralizar verticalmente os itens da ul */
   margin-top: 15px;
 }
 
@@ -53,28 +50,27 @@ header img {
   height: auto;
   margin-top: -12px;
   margin-left: 10px;
-  align-items: right;
 }
 
-header li>a {
+header li > a {
   color: var(--Title-text);
   text-decoration: none;
   line-height: 5rem;
   font-size: 15px;
   cursor: pointer;
   display: flex;
-  align-items: center; /* Ajustado para centralizar verticalmente os links */
+  align-items: center;
 }
 
-header li>a:hover {
+header li > a:hover {
   background: var(--azul-claro);
-  color: var(--laranja); /* Corrigido o uso da variável de cor laranja */
+  color: var(--laranja);
   padding: 1px;
   width: 15;
   height: 13px;
 }
 
-header input[type="text"]{
+header input[type="text"] {
   display: inline-block;
   text-align: center;
   font-size: 0.95rem;
@@ -84,87 +80,76 @@ header input[type="text"]{
   width: 350px;
   border: 2px;
   border-radius: 6px;
-
-  
 }
 
-header input [type="submit"] {width: auto;
-                                border: none;
-                                  margin-top: 100px;
-}
-
-button {background: var(--laranja);
-          font-size: 100%;
-          width: 1rem;
-          height: 1rem;
-          margin-left: 0.2rem;
-          border: none;
-          cursor: pointer;}
-button img { background: var(--laranja);
-               width: 1.7rem;
-              height: auto;
-                margin-right: 100rem;
-                  margin-top: 1.6rem;}
-.menu-opcao {
-  position: relative;
+button {
+  background: var(--laranja);
+  font-size: 100%;
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.2rem;
+  border: none;
   cursor: pointer;
-  /* Ajuste conforme necessário para o espaçamento */
 }
 
-.menu-opcao img {
-  width: 20px;
-  margin-top: 40px;
-  margin-left: 90px; /* Ajuste conforme necessário para o tamanho do ícone do menu */
+button img {
+  width: 1.7rem;
+  height: auto;
+  margin-right: 1rem;
+  margin-top: 1.6rem;
 }
 
-.submenu {
-  display: none;
-  position: absolute;
-  top: 100%; /* Posiciona o submenu abaixo da opção de menu */
-  left: 0;
-  background-color: rgb(196, 195, 195); /* Cor de fundo do submenu */
-  
-  z-index: 5; /* Certifica-se de que o submenu está acima dos outros elementos */
+.menu-opcao {
+  padding: 0.1;                
 }
 
-.menu-opcao:hover .submenu {
-  display: block; /* Mostra o submenu ao passar o mouse na opção de menu */
+.menu-opcao ul {
+  padding: 0.1em;
+  width: 80%;
+  height: auto;
+  margin-left: 80px;  
 }
 
-.submenu li {
-  padding: 8px; /* Ajuste conforme necessário para o espaçamento do submenu */
+.menu-opcao li {
+  padding: 0.001em;
 }
-                                      /*Fim do Header*/
 
-.produtos-em-destaque{
+.produtos-em-destaque {
   background: var(--azul-claro);
   color: var(--Title-text);
   font-size: 100%;
   width: 100%;
   height: 280px;
-  position: sticky;
-  top: 0;
   padding: 12px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-
-.produtos-em-destaque h1 { text-align: center;
-                              margin-left: 520px;
-                                font-family: sans-serif;
-
+.produtos-em-destaque h1 {
+  text-align: center;
+  font-family: sans-serif;
 }
-.produtos-mais-vendidos{background: var(--verde-limon);
+
+.produtos-mais-vendidos {
+  background: var(--verde-limon);
   color: var(--Title-text);
   font-size: 100%;
   width: 100%;
   height: 280px;
   opacity: 0.9;
-  position: sticky;
-  top: 0;
-  
   padding: 12px;
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-
-}                                    
+.rodapé {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
