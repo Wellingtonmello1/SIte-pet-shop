@@ -1,0 +1,236 @@
+
+@media screen and (max-width: 418px){
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+.cabecalho {background-color: #FF914D;
+        width: 100%;
+          height: 6em;
+            margin-top: 1em;
+              border-top: 0.01em solid black;
+              border-left: 0.01em solid black;
+              border-right: 0.01em solid black;
+              }
+
+.mini-titulo {background: beige;}
+
+.mini-titulo h1 { font-size: 0.9em;
+margin-left: 1em;
+  color: #5CE1E6;
+    }
+
+.mini-titulo img { width: 1.5em;
+              margin-left: 0.5em;}
+
+.logo img { width: 5em;
+        margin-left: 110em;
+          margin-top: 0.5em}
+
+.buscar { margin-top: -3.4em;
+      margin-left: 29.9em;
+        }
+
+.buscar input { border-radius: 2em;
+            border: 0.9px solid #5CE1E6;
+              width: 29em;
+                height: 1.7em;
+                text-align: center;
+                  }
+
+.buscar button img {width: 1.4em;
+                margin-bottom: 0.2em;
+                margin-left: 0.1em;
+                transform: scaleX(-1)
+            }
+
+.buscar button {width: 1.4em;
+height: 1.4em;
+margin-bottom: 0.8em;
+margin-left: -2.2em;
+border: none;
+background: none;
+cursor: pointer;
+}
+
+.buscar button:hover {border: none;
+                    background: none;}
+
+.nav {float: right;
+        display: block;
+        margin-left: -5em;
+         }
+
+.nav ul {
+      list-style: none;
+        display: block;
+          display: flex;
+            margin-left: -9em;
+              margin-top: 1.5em;}
+
+.nav li a { text-decoration: none; 
+      
+        color: rgb(35, 35, 35);}
+      
+
+.nav li img { width: 1em;
+} 
+
+.cabecalho-2 {background-color: #FF914D;
+width: 100%;
+height: 1.4em;
+border-bottom: 0.01em solid black;
+border-left: 0.01em solid black;
+border-right: 0.01em solid black;
+  }
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 16em;
+}
+
+/* Estilos para o botão */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 12px;
+    font-size: 0.1em;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn img {width: 13em;
+                margin-top: -9.8em;
+              }
+
+/* Estilos para o conteúdo do dropdown (itens) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#5CE1E6;
+    border: 0.01em solid black;
+    border-radius: 0.3em;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: -0.55em;
+    margin-left: -3em;
+}
+
+/* Estilos para os links dentro do dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Mudança de cor do link ao passar o mouse */
+.dropdown-content a:hover {
+    background-color:#FF914D;
+    border: 0.01em solid black;
+}
+
+/* Mostrar o dropdown ao passar o mouse sobre ele */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content a {
+  display: block;
+  font-size: 0.8em;
+}
+
+/* Mudança de cor do botão ao passar o mouse sobre ele */
+.dropdown:hover .dropbtn {
+    background-color: transparent
+}
+
+.nav3 {}
+
+.cadastro {margin-left: 15em;
+      font-family: Arial, Helvetica, sans-serif;
+        font-size: 0.9em;
+          margin-top: 2em;
+       }
+
+.divsoria1 {border-right: 0.09em solid #5CE1E6;
+      margin-right: 60em;
+      height: 15em;
+        margin-top: -15em;
+        }
+    
+.cadastro input  {border: 0.04em solid #5CE1E6;
+             border-radius: 0.4em;
+             
+              }
+
+
+
+.cadastro input:hover  {border: 0.04em solid #FF914D;
+              border-radius: 0.4em;
+              transition: border-color: 0.3s, color 0.3s;
+            }
+
+
+.titulo1{ font-size: 1.2em;
+      margin-left: 12em;
+        margin-top: 7em;
+          }               
+          
+.button {width: 5.5em;
+    background: #FF914D;
+      }
+
+.buttonS {width: 8.9em;
+      background: #FF914D;
+      border: 0.03em solid;
+        border-radius: 0.3em;}
+
+                             /*fim cadastro*/
+
+.login {margin-left: 47em;
+        font-family: Arial, Helvetica, sans-serif;
+          font-size: 0.9em;
+              margin-top: 2.3em;
+                               }
+                  
+.divsoria2 {border-right: 0.09em solid #5CE1E6;
+       margin-right: 29em;
+        height: 15em;
+          margin-top: -13em;
+                                }
+                            
+.login input  {border: 0.04em solid #5CE1E6;
+                                     border-radius: 0.4em;}
+                  
+.login input:hover  {border: 0.04em solid #FF914D;
+                                      border-radius: 0.4em;}
+                   
+                  
+.titulo2{ font-size: 1.2em;
+       margin-left: 37em;
+          margin-top: -9.9em;
+                                  }
+                          /*fim login*/
+
+.titulo3{ font-size: 1.2em;
+     margin-left: 60em;
+      margin-top: -9.9em;
+       }
+
+.recuperar-senha {margin-right: 80em;
+              font-family: Arial, Helvetica, sans-serif;
+                font-size: 0.9em;
+                  margin-top: 8.9em;
+                                 }             
+
+.recuperar-senhaa input {border: 0.04em solid #5CE1E6;
+                                  border-radius: 0.4em;}
+               
+.recuperar-senha input:hover  {border: 0.04em solid #FF914D;
+                                   border-radius: 0.4em;}
+  
+}

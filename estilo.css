@@ -1,155 +1,621 @@
-:root {
-  --laranja: #ff914d;
-  --azul-claro: #5ce1e6;
-  --verde-limon: #C1FF72;
-  --Title-text: #3E393A;
-}
+*{margin: 0;
+  padding: 0;
+box-sizing: 0;}
 
-body { 
-  background-color: azure;
-  font-size: 100%;
-}
+body {
+        font-family: Arial, Helvetica, sans-serif;
+        }
 
-header {
-  background: var(--laranja);
-  border: 0.01rem solid;
-  border-radius: 3px;
-  color: var(--Title-text);
-  width: 100%;
-  height: 80px;
-  position: sticky;
-  top: 0;
-  z-index: 2;
-  padding: 12px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+.cabecalho {background-color: #FF914D;
+              width: 100%;
+                height: 6em;
+                  margin-top: 0.1em;
+                    border-top: 0.01em solid black;
+                    border-left: 0.01em solid black;
+                    border-right: 0.01em solid black;
+                    }
 
-header nav ul {
-  margin: 0;
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  padding: 0 1rem;
-  color: var(--Title-text);
-  justify-content: flex-end;
-}
+.mini-titulo {background: beige;}
 
-header nav li {
-  min-height: fit-content;
-  height: fit-content;
-  padding: 0.05rem;
-  font-size: none;
-  list-style: none;
-  margin-top: 15px;
-}
+.mini-titulo h1 { font-size: 0.9em;
+      margin-left: 39em;
+        color: #5CE1E6;
+          }
 
-header img {
-  width: 103px;
-  height: auto;
-  margin-top: -12px;
-  margin-left: 10px;
-}
+.mini-titulo img { width: 1em;
+                    margin-left: 0.1em;}
 
-header li > a {
-  color: var(--Title-text);
-  text-decoration: none;
-  line-height: 5rem;
-  font-size: 15px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-}
+.logo img { width: 5em;
+              margin-left: 21.2em;
+                margin-top: 0.1em}
 
-header li > a:hover {
-  background: var(--azul-claro);
-  color: var(--laranja);
-  padding: 1px;
-  width: 15;
-  height: 13px;
-}
+.buscar { margin-top: -3em;
+            margin-left: 33em;
+              }
 
-header input[type="text"] {
-  display: inline-block;
-  text-align: center;
-  font-size: 0.95rem;
-  margin-top: 40px;
-  margin-left: 0px;
-  padding: 3px;
-  width: 350px;
-  border: 2px;
-  border-radius: 6px;
-}
+.buscar input { border-radius: 2em;
+                  border: 0.9px solid #5CE1E6;
+                    width: 28em;
+                      height: 1.7em;
+                      text-align: center;
+                        }
 
-button {
-  background: var(--laranja);
-  font-size: 100%;
-  width: 1rem;
-  height: 1rem;
-  margin-left: 0.2rem;
+.buscar button img {width: 1.4em;
+                      margin-bottom: -0.3em;
+                      margin-left: 0.1em;
+                      transform: scaleX(-1)
+                  }
+
+.buscar button {width: 1.4em;
+  height: 1.4em;
+  margin-bottom: 0.8em;
+  margin-left: -2.2em;
   border: none;
+  background: none;
   cursor: pointer;
-}
+  }
 
-button img {
-  width: 1.7rem;
-  height: auto;
-  margin-right: 1rem;
-  margin-top: 1.6rem;
-}
+.buscar button:hover {border: none;
+                          background: none;}
 
-.menu-opcao {
-  padding: 0.1;                
-}
+.nav { margin-left: 25em;
+        margin-top: -1.7em;}
 
-.menu-opcao ul {
-  padding: 0.1em;
-  width: 80%;
-  height: auto;
-  margin-left: 80px;  
-}
+.nav ul {
+            list-style: none;
+              display: inline;
+                display: flex;
+                  margin-left: 5em;
+                    margin-top: -1.5em;}
 
-.menu-opcao li {
-  padding: 0.001em;
-}
+.nav li a { text-decoration: none; 
+            margin-left: 0.9em;
+              color: rgb(35, 35, 35);
+            font-size: 0.8em;}
 
-.produtos-em-destaque {
-  background: var(--azul-claro);
-  color: var(--Title-text);
-  font-size: 100%;
+.nav li img { width: 1em;
+} 
+
+.cabecalho-2 {background-color: #FF914D;
   width: 100%;
-  height: 280px;
-  padding: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 1.4em;
+    border-bottom: 0.01em solid black;
+    border-left: 0.01em solid black;
+    border-right: 0.01em solid black;
+        }
+
+      
+.dropdown {
+          position: relative;
+          display: inline-block;
+          margin-left: 22em;
+      }
+      
+      /* Estilos para o botão */
+      .dropbtn {
+          background-color: transparent;
+          color: white;
+          padding: 12px;
+          font-size: 0.1em;
+          border: none;
+          cursor: pointer;
+      }
+
+      .dropbtn img {width: 13em;
+                      margin-top: -9.8em;
+                    }
+      
+      /* Estilos para o conteúdo do dropdown (itens) */
+      .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color:#5CE1E6;
+          border: 0.01em solid black;
+          border-radius: 0.3em;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          margin-top: -0.55em;
+          margin-left: -0.1em;
+      }
+      
+      /* Estilos para os links dentro do dropdown */
+      .dropdown-content a {
+          color: black;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+      }
+      
+      /* Mudança de cor do link ao passar o mouse */
+      .dropdown-content a:hover {
+          background-color:#FF914D;
+          border: 0.01em solid black;
+      }
+      
+      /* Mostrar o dropdown ao passar o mouse sobre ele */
+      .dropdown:hover .dropdown-content {
+          display: block;
+      }
+      
+      .dropdown:hover .dropdown-content a {
+        display: block;
+        font-size: 0.8em;
+    }
+      
+      /* Mudança de cor do botão ao passar o mouse sobre ele */
+      .dropdown:hover .dropbtn {
+          background-color: transparent
+      }
+
+.nav3 {margin-left: 29em;
+  margin-top: -2em;
 }
 
-.produtos-em-destaque h1 {
-  text-align: center;
-  font-family: sans-serif;
-}
+.nav3 ul {list-style: none;
+            display: inline;
+              display: flex;}
 
-.produtos-mais-vendidos {
-  background: var(--verde-limon);
-  color: var(--Title-text);
-  font-size: 100%;
+.nav3 li a { text-decoration: none;
+              list-style: none;
+                font-size: 0.69em;
+                  margin-left: 4em;
+                  color: black
+                    }
+
+.cadastro {margin-left: 15em;
+            font-family: Arial, Helvetica, sans-serif;
+              font-size: 0.9em;
+                margin-top: 2em;
+             }
+
+.divsoria1 {border-right: 0.09em solid #5CE1E6;
+            margin-right: 60em;
+            height: 15em;
+              margin-top: -15em;
+              }
+          
+.cadastro input  {border: 0.04em solid #5CE1E6;
+                   border-radius: 0.4em;
+                   
+                    }
+
+
+
+.cadastro input:hover  {border: 0.04em solid #FF914D;
+                    border-radius: 0.4em;
+                    transition: border-color: 0.3s, color 0.3s;
+                  }
+ 
+
+.titulo1{ font-size: 1.2em;
+            margin-left: 12em;
+              margin-top: 6em;
+                }               
+                
+.button {width: 5.5em;
+          background: #FF914D;
+            }
+
+.buttonS {width: 8.9em;
+            background: #FF914D;
+            border: 0.03em solid;
+              border-radius: 0.3em;}
+
+                                   /*fim cadastro*/
+
+.login {margin-left: 47em;
+              font-family: Arial, Helvetica, sans-serif;
+                font-size: 0.9em;
+                    margin-top: 2.3em;
+                                     }
+                        
+.divsoria2 {border-right: 0.09em solid #5CE1E6;
+             margin-right: 29em;
+              height: 15em;
+                margin-top: -13em;
+                                      }
+                                  
+.login input  {border: 0.04em solid #5CE1E6;
+                                           border-radius: 0.4em;}
+                        
+.login input:hover  {border: 0.04em solid #FF914D;
+                                            border-radius: 0.4em;}
+                         
+                        
+.titulo2{ font-size: 1.2em;
+             margin-left: 37em;
+                margin-top: -9.9em;
+                                        }
+                                /*fim login*/
+
+.titulo3{ font-size: 1.2em;
+           margin-left: 60em;
+            margin-top: -9.5em;
+             }
+
+.recuperar {margin-left: 80em;
+                    font-family: Arial, Helvetica, sans-serif;
+                      font-size: 0.9em;
+                        margin-top: 2.9em;
+                                       }             
+
+.recuperar input {border: 0.04em solid #5CE1E6;
+                                        border-radius: 0.4em;}
+                     
+.recuperar input:hover  {border: 0.04em solid #FF914D;
+                                         border-radius: 0.4em;}
+
+  .rodape {background: #5CE1E6;
   width: 100%;
-  height: 280px;
-  opacity: 0.9;
-  padding: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: 100%;
+    border-top: 0.01em solid #FF914D;
+      }
+.rodape img { width: 19em;
+                margin-left: 10.6em;
+                margin-top:-0.1em;}
+
+.rodape footer { font-family: Arial, Helvetica, sans-serif;
+                  font size: 0.6em;
+                    color:#666565;
+                        margin-left: 40%}
+
+.rodape H6 { font-family: Arial, Helvetica, sans-serif;
+              font-weight: -10em;
+              font size: 1.9em;
+                  color:#666565;
+                      margin-left: 43%;
+                        margin-top: 1%}
+
+@media screen and (max-width: 418px){
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  }
+
+.cabecalho {background-color: #FF914D;
+        width: 100%;
+          height: 6em;
+            margin-top: 0em;
+              border-top: 0.01em solid black;
+              border-left: 0.01em solid black;
+              border-right: 0.01em solid black;
+              }
+
+.mini-titulo {background: beige;}
+
+.mini-titulo h1 { font-size: 0.8em;
+margin-left: 4em;
+  color: #5CE1E6;
+    }
+
+.mini-titulo img { width: 1.5em;
+              margin-left: 0.9em;}
+
+.logo img { width: 5em;
+        margin-left: 0.1em;
+          margin-top: 0.1em}
+
+.buscar { margin-top: -3em;
+      margin-left: 5.5em;
+        }
+
+.buscar input { border-radius: 2em;
+            border: 0.9px solid #5CE1E6;
+              width: 18em;
+                height: 1.7em;
+                text-align: center;
+                  }
+
+.buscar button img {width: 1.4em;
+                margin-bottom: -0.3em;
+                margin-left: 0.1em;
+                transform: scaleX(-1)
+            }
+
+.buscar button {width: 1.4em;
+height: 1.4em;
+margin-bottom: 0.8em;
+margin-left: -2.2em;
+border: none;
+background: none;
+cursor: pointer;
 }
 
-.rodapé {
-  background: #333;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  position: relative;
-  bottom: 0;
-  width: 100%;
+.buscar button:hover {border: none;
+                    background: none;}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 0.3em;
 }
+
+/* Estilos para o botão */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 12px;
+    font-size: 0.1em;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn img {width: 13em;
+                margin-top: -9.8em;
+              }
+
+/* Estilos para o conteúdo do dropdown (itens) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#5CE1E6;
+    border: 0.01em solid black;
+    border-radius: 0.3em;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: -0.55em;
+    margin-left: -0.4em;
+}
+
+/* Estilos para os links dentro do dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Mudança de cor do link ao passar o mouse */
+.dropdown-content a:hover {
+    background-color:#FF914D;
+    border: 0.01em solid black;
+}
+
+/* Mostrar o dropdown ao passar o mouse sobre ele */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content a {
+  display: block;
+  font-size: 0.8em;
+}
+
+/* Mudança de cor do botão ao passar o mouse sobre ele */
+.dropdown:hover .dropbtn {
+    background-color: transparent
+}
+
+.nav {float: right;
+        display: block;
+        margin-left: -5em;
+          }
+
+.nav ul {
+      list-style: none;
+        display: block;
+          display: flex;
+            margin-left: -20em;
+              margin-top: 4em;}
+
+.nav li a { text-decoration: none; 
+      
+        color: rgb(35, 35, 35);}
+      
+
+.nav li img { width: 1em;
+} 
+
+.cabecalho-2 {background-color: #FF914D;
+width: 100%;
+height: 1.4em;
+border-bottom: 0.01em solid black;
+border-left: 0.01em solid black;
+border-right: 0.01em solid black;
+  }
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 0.3em;
+}
+
+/* Estilos para o botão */
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 12px;
+    font-size: 0.1em;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn img {width: 13em;
+                margin-top: -9.8em;
+              }
+
+/* Estilos para o conteúdo do dropdown (itens) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:#5CE1E6;
+    border: 0.01em solid black;
+    border-radius: 0.3em;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-top: -0.55em;
+    margin-left: -0.4em;
+}
+
+/* Estilos para os links dentro do dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Mudança de cor do link ao passar o mouse */
+.dropdown-content a:hover {
+    background-color:#FF914D;
+    border: 0.01em solid black;
+}
+
+/* Mostrar o dropdown ao passar o mouse sobre ele */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropdown-content a {
+  display: block;
+  font-size: 0.8em;
+}
+
+/* Mudança de cor do botão ao passar o mouse sobre ele */
+.dropdown:hover .dropbtn {
+    background-color: transparent
+}
+
+.nav3 {margin-left: 2em;
+  margin-top: -2em; display: none;
+}
+
+.nav3 ul {list-style: none;
+            display: inline;
+              display: flex;}
+
+.nav3 li a { text-decoration: none;
+              list-style: none;
+                font-size: 0.4em;
+                  margin-left: 4em;
+                  color: black
+                    }
+.cadastro {margin-left: 2.5em;
+      font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+          margin-top: 1em;
+            
+        }
+
+.divsoria1 {border-bottom: 0.09em solid #5CE1E6;
+      margin-right: 60em;
+      height: 14em;
+        margin-top: 0em;
+        }
+    
+.cadastro input  {border: 0.09em solid #5CE1E6;
+                  width: 19em;
+                  height: 1.5em;
+                  border-radius: 0.4em;
+                  margin-top: 0.8em;
+                  margin-bottom: 0.5em;
+              }
+
+
+
+.cadastro input:hover  {border: 0.1em solid #FF914D;
+                        border-radius: 0.4em;
+                        transition: border-color: 0.3s, color 0.3s;
+                        
+            }
+
+
+.titulo1{ font-size: 1.2em;
+      margin-left: 1em;
+        margin-top: 1em;
+          }               
+          
+.button {width: 5.5em;
+    background: #FF914D;
+      }
+
+.buttonS {width: 8.9em;
+      background: #FF914D;
+      border: 0.03em solid;
+        border-radius: 0.3em;}
+
+                              /*fim cadastro*/
+
+.login {margin-left: 2.5em;
+        font-family: Arial, Helvetica, sans-serif;
+          font-size: 1em;
+              margin-top: 2.3em;
+              
+                }
+                  
+.divsoria2 {border-right: 0.09em solid #5CE1E6;
+        margin-right: 29em;
+        height: 15em;
+          margin-top: -13em;
+                                }
+                            
+.login input  {border: 0.1em solid #5CE1E6;
+                 border-radius: 0.4em;
+                 width: 19em;
+                  height: 1.5em;
+                   margin-top: 1em;
+                   margin-bottom: 0.5em;}
+                  
+.login input:hover  {border: 0.04em solid #FF914D;
+                                      border-radius: 0.4em;}
+                    
+                  
+.titulo2{ font-size: 1.2em;
+        margin-left: 1.5em;
+          margin-top: -8.5em;
+                                  }
+                          /*fim login*/
+
+.titulo3{ font-size: 1.2em;
+      margin-left: 2em;
+      margin-top: 2em;
+        }
+
+.recuperar {margin-left: 2.5em;
+            font-family: Arial, Helvetica, sans-serif;
+              font-size: 1em;
+                margin-top: 2.3em;
+        }             
+
+.recuperar input {border: 0.1em solid #5CE1E6;
+                     border-radius: 0.4em;
+                      width: 19em;
+                        height: 1.5em;
+                         margin-top: 1em;
+                          margin-bottom: 0.5em;}
+                
+.recuperar input:hover  {border: 0.04em solid #FF914D;
+                                    border-radius: 0.4em;}
+  
+}
+
+.rodape {background: #5CE1E6;
+  width: 100%;
+    height: 100%;
+    border-top: 0.01em solid #FF914D;
+      }
+.rodape img { width: 19em;
+                margin-left: 3.1em;
+                margin-top:-0.1em;}
+
+.rodape footer { font-family: Arial, Helvetica, sans-serif;
+                  font size: 0.6em;
+                    color:#666565;
+                       margin-left: 20%}
+
+.rodape H6 { font-family: Arial, Helvetica, sans-serif;
+              font-weight: -10em;
+              font size: 1.9em;
+                  color:#666565;
+                      margin-left: 28%;
+                        margin-top: 1%}
+
+.rodape a {text-decoration: none;
+            color: #666565;
+                margin-left: 3em;
+                  margin-bottom: -10em;}
+  

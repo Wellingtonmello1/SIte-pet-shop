@@ -1,0 +1,147 @@
+/* Define as variáveis de cor e fonte */
+:root {
+  --laranja: #ff914d;
+  --azul-claro: #5ce1e6;
+  --verde-limon: #C1FF72;
+  --Title-text: #3E393A;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: azure;
+  font-size: 100%;
+}
+
+header {
+  background: var(--laranja);
+  border: 0.01rem solid;
+  border-radius: 3px;
+  color: var(--Title-text);
+  width: 100%;
+  height: 80px;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.opcoes nav ul {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1rem;
+  color: var(--Title-text);
+  justify-content: flex-end;
+}
+
+.opcoes nav li {
+  min-height: fit-content;
+  height: fit-content;
+  padding: 0.05rem;
+  font-size: none;
+  list-style: none;
+  margin-top: 15px;
+}
+
+.opcoes li a {
+  color: var(--Title-text);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 5rem;
+  font-size: 15px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.opcoes li a:hover {
+  background: var(--azul-claro);
+  color: var(--laranja);
+  padding: 1px;
+  width: 15;
+  height: 13px;
+}
+
+header img {
+  width: 103px;
+  height: auto;
+  margin-top: 0px;
+  margin-right: 1px;
+  float: right;
+}
+
+header input {
+  display: inline-block;
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 40px;
+  margin-left: 0px;
+  padding: 3px;
+  width: 350px;
+  border: 2px;
+  border-radius: 6px;
+}
+
+button {
+  background: var(--laranja);
+  font-size: 100%;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 0rem;
+  margin-left: 0.2rem;
+  border: none;
+  cursor: pointer;
+}
+
+button img {
+  width: 1.7rem;
+  height: auto;
+  margin-right: 1rem;
+  margin-top: 1.6rem;
+}
+
+
+.produtos-em-destaque {
+  background: var(--azul-claro);
+  color: var(--Title-text);
+  font-size: 100%;
+  width: 100%;
+  height: 280px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.produtos-em-destaque h1 {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.produtos-mais-vendidos {
+  background: var(--verde-limon);
+  color: var(--Title-text);
+  font-size: 100%;
+  width: 100%;
+  height: 280px;
+  opacity: 0.9;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rodape {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  float: center;
+}

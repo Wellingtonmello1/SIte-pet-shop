@@ -1,54 +1,101 @@
 <!DOCTYPE html>
-<html lang="PT-BR">
+<html lang="Pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo-screen.css">
+  <link rel="stylesheet" href="estilo.css">
+  
+
   <title>Pet Lola</title>
-  <meta><link rel="shortcut icon" href="imagem/1.png" type="image/x-icon">
-  <link rel="stylesheet" type="text/css" href="estilo.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  
 </head>
 <body>
-  <header>
-    <div class="menu-opcao">
-      <ul class="submenu">
-        <li><a href="Ração">Ração</a></li>
-        <li><a href="Brinquedos">Brinquedos</a></li>
-        <li><a href="Areia">Areaia</a></li>
-        <li><a href="Remédios">Remédios</a></li>
-        <li><a href="Coleiras">Coleiras</a></li>
-        <li><a href="Outros">Outros</a></li>
-      </ul>
-    </div>
-    <a href="index.html"> <img src="imagem/1.png" alt="Logo"></a>
-    
-    <div id="search-bar">
-      <input type="text" name="Buscar" placeholder="Pesquise o produto para seu pet">
-      <button type="submit"><img src="imagem/icons8-lupa.svg"></button>
-    </div>
+  <Div class="mini-titulo"><h1>Pet Shop do Zé, Mas comandado pela aninha <img src="icon/icons8-cachorro-64.png" alt="ana"></h1></Div>
+      <header class="styck-top">
+        
+        <div class="cabecalho">
+        <div class="logo">
+          <a href="index.html"> <img src="imagem/1.png" alt="Home"></a>
+        </div>
 
-    <div id="opcoes">
-      <nav>
-        <ul>
-          <li><a href="index.html">Pagina inicial</a></li>
-          <li><a href="Produtos.html">Produtos</a></li>
-          <li><a href="contato.html">Contato</a></li>
-          <li><a href="Sobre Nos.html">Sobre Nós</a></li>  
-          <li><a href="Login/Cadastro.html">Login/Cadastro</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <section class="produtos-em-destaque">
-            <h1> Confira os principais produtos </h1>
-  </section>
-  <section class="produtos-mais-vendidos">
-        <h2>produtos mais vendidos</h2>
+        <div class="buscar">
+          <input type="text" placeholder="O que seu pet precisa ?">
+          <button type="submit"><img src="imagem/icons8-lupa.svg" alt="buscar"></button>
 
-  </section>
-  <section .class="rodapé">
-          <p>© 2014 Todos os Direitos Reservados. Wellington Mello</p>
-  </section>
+            <div class="nav">
+              <nav class="nav-list">
+                <ul>
+                <li><a href="">Produtos <img src="icon/icons8-caixa-cheia-50.png" alt="produtos"></a></li>
+
+                <li><a href="Sobre.html">Sobre nós <img src="icon/icons8-pet-shop-64.png" alt="sobre"></a></li>
+
+                <li><a href="cadastro.html">Cadastro/Login <img src="icon/icons8-usuário-24.png" alt="login" ></a></li>
+              </ul></nav>
+            </div></div>
+      </header>
+      <header class="cabecalho-2">
+        <div class="dropdown">
+          <button class="dropbtn"><img src="icon/icons8-cardápio-50.svg" alt="menu"></button>
+          <div class="dropdown-content">
+              <a href="#">Acessórios pra Cães</a>
+              <a href="#">Acessórios pra Gatos</a>
+              <a href="#">Areia Higiênica</a>
+              <a href="#">Brinquedos</a>
+              <a href="#">Coleiras</a>
+              <a href="#">Rações para gatos</a>
+              <a href="#">Rações para Cachorros</a>
+              <a href="#">Rações para peixe</a>
+              <a href="#">Rações para Passarinhos</a>
+              <a href="#">Remédios</a>
+              <a href="#">Vermífugo</a>
+          </div>
+      </div>
+        </nav>
+        <div  class="nav3">
+        <nav>
+            <ul>
+              <li><a href="#">Principais produtos</a></li>
+              <li> <a href="#">Rações para Gatos</a></li>
+              <li><a href="#">Rações para Cachorro</a></li>
+              <li><a href="#">Brinquedos para Cachorro</a></li>
+            </ul>
+        </nav></div>
+      </header>
+
+      <section class="slides">
+        <div class="slideshow-container">
+          <div class="slide fade">
+            <img src="slideshow/special-dog-carne-adultos-flna4-20211223135246.png" alt="Slide 1">
+          </div>
+          <div class="slide fade">
+            <img src="slideshow/premier_gatos-removebg-preview.png" alt="Slide 2">
+          </div>
+          <div class="slide fade">
+            <img src="slideshow/20200513095244_7908992092_D (1).png" alt="Slide 3">
+          </div>
+          <!-- Adicione mais slides conforme necessário -->
+        </div>
+      
+        <div class="radio-buttons">
+          <input type="radio" name="slide" id="slide1" checked>
+          <input type="radio" name="slide" id="slide2">
+          <input type="radio" name="slide" id="slide3">
+          <!-- Adicione mais botões de rádio conforme necessário -->
+        </div>
+        <script src="js.js"></script>
+      </section>
+
+<Section>
+    <div class="rodape">
+              <footer>Todos os Direitos Reservados ©</Footer>
+              <h6>PetLola - Wellington Melo</h6>
+
+        <a href="#">Nosso Whatsapp</a>
+        <a href="#"> Nosso endereço</a>
+        <img src="imagem/Design_sem_nome__2_-removebg-preview.png" alt="fundo">
+
+    </div>
+</Section>
 </body>
 </html>
