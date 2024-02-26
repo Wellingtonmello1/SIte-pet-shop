@@ -600,12 +600,13 @@ border-right: 0.01em solid black;
       }
 .rodape img { width: 19em;
                 margin-left: 3.1em;
-                margin-top:-0.1em;}
+                margin-top:-0.5em;}
 
 .rodape footer { font-family: Arial, Helvetica, sans-serif;
                   font size: 0.6em;
                     color:#666565;
-                       margin-left: 20%}
+                       margin-left: 20%;
+                       margin-top: 1em;}
 
 .rodape H6 { font-family: Arial, Helvetica, sans-serif;
               font-weight: -10em;
@@ -617,5 +618,5 @@ border-right: 0.01em solid black;
 .rodape a {text-decoration: none;
             color: #666565;
                 margin-left: 3em;
-                  margin-bottom: -10em;}
+                  margin-top: -10em;}
   
