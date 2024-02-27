@@ -652,6 +652,8 @@ border-right: 0.01em solid black;
                     
 .titulo-sobre p {font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 font-size: 1.1em;
-                  margin-bottom:}
+                  margin-left:1em;
+                  margin-right: 1em;
+                    }
                                   
 }
