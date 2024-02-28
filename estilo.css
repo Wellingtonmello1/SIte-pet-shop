@@ -248,13 +248,14 @@ body {
 
 .rodape {background: #5CE1E6;
   width: 100%;
-    margin: 0;
+  height: 36em;
     border-top: 0.01em solid #FF914D;
       }
 
 .rodape img          {width: 45em;
                 margin-left: 25em;
-                margin-top: -8em;}
+                
+                }
 
 .rodape h2 { font-family: Arial, Helvetica, sans-serif;
                   font-size: 0.98em;
