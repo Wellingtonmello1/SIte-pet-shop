@@ -4,21 +4,27 @@ box-sizing: 0;}
 
 body {
         font-family: Arial, Helvetica, sans-serif;
+        height: 100%;
+        box-sizing: border-box;
         }
 
 .cabecalho {background-color: #FF914D;
               width: 100%;
-                height: 6em;
-                  margin-top: 0.1em;
-                    border-top: 0.01em solid black;
-                    border-left: 0.01em solid black;
-                    border-right: 0.01em solid black;
+                height: 6rem;
+                  margin-top: 0.1rem;
+                    
+                    border-left: 0.01rem solid black;
+                    border-right: 0.01rem solid black;
+                    position: fixed;
+                    z-index:1 ;
+                    transition: top 0.3s ease-in-out;
                     }
 
-.mini-titulo {background: beige;}
+.mini-titulo {background: beige;
+                display: flex;}
 
 .mini-titulo h1 { font-size: 0.9em;
-      margin-left: 39em;
+      margin-left: 39%;
         color: #5CE1E6;
           }
 
@@ -26,28 +32,28 @@ body {
                     margin-left: 0.1em;}
 
 .logo img { width: 5em;
-              margin-left: 21.2em;
-                margin-top: 0.1em}
+              margin-left: 23%;
+                margin-top: 0.1rem}
 
-.buscar { margin-top: -3em;
-            margin-left: 33em;
+.buscar { margin-top: -3rem;
+            margin-left: 35%;
               }
 
-.buscar input { border-radius: 2em;
+.buscar input { border-radius: 2rem;
                   border: 0.9px solid #5CE1E6;
-                    width: 28em;
-                      height: 1.7em;
+                    width: 25rem;
+                      height: 1.5rem;
                       text-align: center;
                         }
 
-.buscar button img {width: 1.4em;
+.buscar button img {width: 1.4rem;
                       margin-bottom: -0.3em;
                       margin-left: 0.1em;
                       transform: scaleX(-1)
                   }
 
-.buscar button {width: 1.4em;
-  height: 1.4em;
+.buscar button {width: 1.4rem;
+  height: 1.4rem;
   margin-bottom: 0.8em;
   margin-left: -2.2em;
   border: none;
@@ -58,37 +64,37 @@ body {
 .buscar button:hover {border: none;
                           background: none;}
 
-.nav { margin-left: 25em;
-        margin-top: -1.7em;}
+.nav { margin-left: 39%;
+        margin-top: -1.7rem;}
 
 .nav ul {
             list-style: none;
               display: inline;
                 display: flex;
-                  margin-left: 5em;
-                    margin-top: -1.5em;}
+                  margin-left: 5rem;
+                    margin-top: -1.5rem;}
 
 .nav li a { text-decoration: none; 
-            margin-left: 0.9em;
+            margin-left: 0.9rem;
               color: rgb(35, 35, 35);
-            font-size: 0.8em;}
+            font-size: 0.8rem;}
 
-.nav li img { width: 1em;
+.nav li img { width: 1rem;
 } 
 
 .cabecalho-2 {background-color: #FF914D;
   width: 100%;
-    height: 1.4em;
-    border-bottom: 0.01em solid black;
+    height: 1.5em;;
     border-left: 0.01em solid black;
     border-right: 0.01em solid black;
+      margin-top: 5.9em;
         }
 
       
 .dropdown {
           position: relative;
           display: inline-block;
-          margin-left: 22em;
+          margin-left: 24%
       }
       
       /* Estilos para o botão */
@@ -102,7 +108,7 @@ body {
       }
 
       .dropbtn img {width: 13em;
-                      margin-top: -9.8em;
+                      margin-top: -7.6em;
                     }
       
       /* Estilos para o conteúdo do dropdown (itens) */
@@ -115,8 +121,8 @@ body {
           min-width: 160px;
           box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
           z-index: 1;
-          margin-top: -0.55em;
-          margin-left: -0.1em;
+          margin-top: -0.65em;
+          margin-left: -0.9em;
       }
       
       /* Estilos para os links dentro do dropdown */
@@ -148,7 +154,7 @@ body {
           background-color: transparent
       }
 
-.nav3 {margin-left: 29em;
+.nav3 {margin-left: 29%;
   margin-top: -2em;
 }
 
@@ -161,6 +167,24 @@ body {
                 font-size: 0.69em;
                   margin-left: 4em;
                   color: black
+                    }
+
+.carousel-container {
+                      width: 100%;
+                      height: 100vh;
+                      overflow: hidden;
+}
+                    
+.carousel-wrapper {
+                      display: flex;
+                      transition: transform 0.5s ease;
+}
+                    
+.carousel-slide {
+                  width: 100%;
+                    height: 100%;
+                      object-fit: cover;
+                        opacity: 0.7;
                     }
 
 .cadastro {margin-left: 15em;
@@ -248,60 +272,54 @@ body {
 
 .rodape {background: #5CE1E6;
   width: 100%;
-  height: 36em;
+  height: auto;
     border-top: 0.01em solid #FF914D;
       }
 
-.rodape img          {width: 45em;
-                margin-left: 25em;
-                
+.rodape img    {width: 50%;
+                margin-left: 27%;
+                  margin-top: -30%;
                 }
 
 .rodape h2 { font-family: Arial, Helvetica, sans-serif;
                   font-size: 0.98em;
                     color:#666565;
-                        margin-left: 37.5em;
+                        margin-left: 40%;
                         margin-top: 1em;}
 
 .rodape h4 { font-family: Arial, Helvetica, sans-serif;
               font-weight: -10em;
               font-size: 0.9em;
                   color:#666565;
-                      margin-left: 43em;
-                        margin-top: 0.5em}
+                      margin-left: 42%;
+                        margin-top: 1em}
 
 .rodape a {text-decoration: none;
             color: #666565;
-                margin-left: 3em;
-                  margin-top: -10em;}
+                margin-left: 3%;
+                  font-weight: 40em;
+                  }
 
 .nav-left ul {text-align: left;
                   list-style: none;
-                  margin-top: -2em;
-                margin-left: -0.5em;}
+                margin-left: -0.2%;}
 
-  
-.nav-right ul {text-align: right;
-                list-style: none;
-                  margin-top:-4.8em;
-                  margin-right: 9em;
-}
 
 .nav-esquerda li { margin-bottom: 0.9em;}
 
 .rodape p:first-of-type{ color: #666565;
               font-size: 0.8em;
-                text-align: center;
-                    margin-top: 2.5em;
-                      margin-right: 13em;}
+                text-align: center;                     
+                padding-left: 75%;}
 
 .rodape p:first-of-type + p { color: #666565;
                                 font-size: 0.8em;
-                                  margin-left: 47em;}
+                                  padding-left: 80%;
+                                    }
 
 .rodape p:first-of-type + p + p {color: #666565;
                                     font-size: 0.8em;
-                                    margin-left: 50em;} 
+                                    margin-left: 82.5%;} 
 
 .titulo-sobre {margin-bottom: 1%;}
 
@@ -315,5 +333,3 @@ body {
                   margin-left:1em;
                   margin-right: 1em;
                     }
-
-

@@ -251,8 +251,8 @@ border-top: 0.01em solid #FF914D;
   }
 
 .rodape img{width: 15em;
-            margin-left: 5em;
-            margin-top: 0.1em;
+            margin-left: 15%;
+            margin-top: 0.1%;
             }
 
 .rodape h2 { font-family: Arial, Helvetica, sans-serif;
@@ -263,43 +263,35 @@ border-top: 0.01em solid #FF914D;
 
 .rodape h4 { font-family: Arial, Helvetica, sans-serif;
           font-weight: -10em;
-          font-size: 0.9em;
+          font-size: 0.6em;
               color:#666565;
-                  margin-left: 7.3em;
+                  margin-left: 37%;
                     margin-top: 0.5em}
 
 .rodape a {text-decoration: none;
-        color: #666565;
+            color: #666565;
             margin-left: 3em;
-              margin-top: -10em;}
+              ;}
 
 .nav-left ul {text-align: left;
               list-style: none;
-              margin-top: 1.7em;
             margin-left: -2em;}
 
 
-.nav-right ul {text-align: right;
-            list-style: none;
-              margin-top:-4.5em;
-              margin-right: 1em;
-}
-
-.nav-left li { margin-bottom: 0.1em;}
 
 .rodape p:first-of-type{ color: #666565;
           font-size: 0.8em;
             text-align: center;
-                margin-top: 2.5em;
-                  margin-right: 1em;}
+                margin-top: 3%;
+                  margin-left: -75%;}
 
 .rodape p:first-of-type + p { color: #666565;
-                            font-size: 0.8em;
-                              margin-left: 6em;}
+              font-size: 0.8em;
+                margin-left: -60%;}
 
 .rodape p:first-of-type + p + p {color: #666565;
-                                font-size: 0.8em;
-                                margin-left: 8em;} 
+                font-size: 0.8em;
+                margin-left: 8em;} 
 
 .titulo-sobre {margin-bottom: 1%;}
 
